@@ -57,7 +57,7 @@ def build():
 	try:
 		config = json.loads( get_file_content( CONFIG_FILE ) )
 	except ValueError, e:
-		error('grouper.js in wrong format ' + e)
+		error('grouper.js in wrong format ' + str(e))
 	if not config.has_key('outputs'):
 		error('You must set the "outputs" key in grouper.json')
 	generate_files( config )

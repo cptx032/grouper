@@ -37,8 +37,9 @@ def generate_files( config_dict ):
 		if key != 'outputs':
 			if not _content_dict.has_key(key):
 				_content_dict[ key ] = ''
+			print key + ':'
 			for file_name in config_dict[ key ]:
-				print key + '+', file_name
+				print '\t' + file_name
 				_path = os.path.join(cur_dir, file_name)
 				if not os.path.isfile( _path ):
 					error('Error: file %s not found' % (file_name))

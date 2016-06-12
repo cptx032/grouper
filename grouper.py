@@ -61,6 +61,7 @@ def build():
 	if not config.has_key('outputs'):
 		error('You must set the "outputs" key in grouper.json')
 	generate_files( config )
+	print "SUCCESS"
 
 if os.path.isfile( json_file ):
 	build()

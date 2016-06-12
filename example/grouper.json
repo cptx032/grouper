@@ -1,0 +1,8 @@
+{
+	"my_javascript": ["math.js", "game.js"],
+	"outputs": [
+		{
+			"index.html" : "build/index.html"
+		}
+	]
+}
